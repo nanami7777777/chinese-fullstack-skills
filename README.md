@@ -1,52 +1,48 @@
-# 🇨🇳 中文全栈开发 Agent Skills
+# 🇨🇳 中文开发者 Agent Skills
 
 [![Skills](https://img.shields.io/badge/agent--skills-compatible-blue)](https://skills.sh)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-面向中文开发者的 AI Agent Skills 合集。适用于 Claude Code / Cursor / Kiro / Codex / OpenCode 等所有支持 Agent Skills 标准的工具。
+聚焦开发者日常痛点的 Agent Skills。不是大而全的手册，每个 skill 只解决一个具体问题，但解决得很深。
+
+适用于 Claude Code / Cursor / Kiro / Codex / OpenCode 等所有支持 Agent Skills 标准的工具。
 
 ## 安装
 
 ```bash
-# 安装全部 skills
+# 安装全部
 npx skills add nanami7777777/chinese-fullstack-skills
 
-# 安装单个 skill
-npx skills add nanami7777777/chinese-fullstack-skills/vue3-best-practices
-npx skills add nanami7777777/chinese-fullstack-skills/react-nextjs-cn
-npx skills add nanami7777777/chinese-fullstack-skills/node-api-design
-npx skills add nanami7777777/chinese-fullstack-skills/go-web-service
-npx skills add nanami7777777/chinese-fullstack-skills/aliyun-deploy
-npx skills add nanami7777777/chinese-fullstack-skills/wechat-miniprogram
+# 安装单个
+npx skills add nanami7777777/chinese-fullstack-skills/git-commit-cn
+npx skills add nanami7777777/chinese-fullstack-skills/api-error-handling
+npx skills add nanami7777777/chinese-fullstack-skills/code-review-cn
+npx skills add nanami7777777/chinese-fullstack-skills/env-config-safety
 ```
 
-## Skills 列表
+## Skills
 
-| Skill | 说明 | 适用场景 |
-|-------|------|----------|
-| [vue3-best-practices](./vue3-best-practices/) | Vue 3 + TypeScript + Pinia 开发规范 | Vue 3 项目开发 |
-| [react-nextjs-cn](./react-nextjs-cn/) | React 19 + Next.js 15 中文开发规范 | React/Next.js 项目 |
-| [node-api-design](./node-api-design/) | Node.js RESTful API 设计规范 | 后端 API 开发 |
-| [go-web-service](./go-web-service/) | Go Web 服务开发规范 | Go 后端服务 |
-| [aliyun-deploy](./aliyun-deploy/) | 阿里云部署最佳实践 | 国内云部署 |
-| [wechat-miniprogram](./wechat-miniprogram/) | 微信小程序开发规范 | 小程序开发 |
+| Skill | 解决什么痛点 |
+|-------|-------------|
+| [git-commit-cn](./git-commit-cn/) | 写不好 commit message？中文 Conventional Commits 规范 + 从 diff 自动生成的决策逻辑 |
+| [api-error-handling](./api-error-handling/) | 错误处理一团糟？HTTP 状态码决策树 + 数据库/第三方/并发等 6 种场景的完整处理方案 |
+| [code-review-cn](./code-review-cn/) | Review 评论写不清楚？分级标注（🔴🟡🟢）+ 检查清单 + PR 描述模板 |
+| [env-config-safety](./env-config-safety/) | 密钥泄露过？.env 规范 + .gitignore 模板 + 启动时验证 + 多环境密钥管理 |
 
-## 为什么需要中文 Skills
+## 设计理念
 
-- skills.sh 上 99% 是英文 skill，中文开发者的技术栈和部署环境有差异
-- 国内项目常用 Vue 3 + Element Plus、微信小程序、阿里云，这些在英文 skill 里覆盖不到
-- 中文注释规范、命名习惯、团队协作约定需要专门的指导
-- 国内部署（备案、CDN、OSS、RDS）有独特的最佳实践
-
-## 兼容性
-
-这些 skills 遵循 [Agent Skills 开放标准](https://openagentskills.com)，兼容：
-
-- Claude Code / Cursor / Kiro / OpenAI Codex / GitHub Copilot / OpenCode / Aider 等 40+ 工具
+- **聚焦痛点**：每个 skill 只解决一个问题，不做大而全的手册
+- **决策导向**：不只告诉你"怎么做"，更告诉你"什么时候该用哪种方案"
+- **真实场景**：代码示例来自真实项目，包含边界情况和错误处理
+- **中文优先**：scope 用中文业务域、错误信息用中文、注释用中文
 
 ## 贡献
 
-欢迎 PR！请参考 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+欢迎 PR！好的 skill 应该：
+- 只解决一个具体痛点
+- 包含决策逻辑（什么时候用/什么时候不用）
+- 代码示例包含边界情况
+- 中文内容，description 用英文（agent 触发匹配用）
 
 ## License
 
